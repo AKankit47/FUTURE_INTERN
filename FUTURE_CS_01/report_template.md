@@ -183,7 +183,9 @@ Avoid dangerous JS functions (innerHTML, eval)
 
 Implement CSP headers
 
-🔐 5.3 Weak JWT Verification (Privilege Escalation)
+---
+
+# 🔐 5.3 Weak JWT Verification (Privilege Escalation)
 Description
 The application accepts tampered or unsigned JWT tokens.
 By modifying the payload and removing the signature, the attacker can elevate privileges.
@@ -219,7 +221,7 @@ Store roles server-side
 
 Reject unsigned tokens immediately
 
-🔓 5.4 Insecure Direct Object Reference (IDOR)
+# 🔓 5.4 Insecure Direct Object Reference (IDOR)
 Description
 Certain API endpoints expose user IDs and do not enforce authorization checks. Changing the ID returns another user's data.
 
@@ -252,7 +254,7 @@ Use indirect identifiers
 
 Enforce RBAC for sensitive endpoints
 
-📝 6. Conclusion
+# 📝 6. Conclusion
 This task provided hands-on experience with real-world web vulnerabilities using OWASP Juice Shop.
 Throughout the assessment, I gained practical knowledge of:
 
