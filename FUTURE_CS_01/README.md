@@ -61,9 +61,9 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 Then visit:
 
 👉 http://localhost:3000
-
-2️⃣ Node.js (Local Installation)
-bash
+```
+#2️⃣ Node.js (Local Installation)
+```bash
 Copy code
 git clone https://github.com/bkimminich/juice-shop.git
 cd juice-shop
@@ -71,11 +71,13 @@ npm install
 npm start
 Runs on port 3000.
 
-3️⃣ TryHackMe / HackTheBox
+```
+
+# 3️⃣ TryHackMe / HackTheBox
 Hosted instances—no installation needed.
 Perfect for beginners.
 
-4️⃣ Cloud Deployment
+# 4️⃣ Cloud Deployment
 Can be deployed on:
 
 Heroku
@@ -86,7 +88,7 @@ AWS
 
 Useful for remote access or group training.
 
-5️⃣ Pre-Built Packages
+# 5️⃣ Pre-Built Packages
 Available for:
 
 Windows
@@ -100,7 +102,7 @@ Download, open, and start testing.
 Once running, the application looks like a normal web store—
 but behind the scenes it contains numerous exploitable vulnerabilities.
 
-🧨 SQL Injection (SQLi)
+# 🧨 SQL Injection (SQLi)
 SQL Injection occurs when user input is not validated and is directly inserted into SQL queries.
 
 1️⃣ Understanding SQL Injection
