@@ -220,6 +220,7 @@ Use strong secret keys
 Store roles server-side
 
 Reject unsigned tokens immediately
+---
 
 # 🔓 5.4 Insecure Direct Object Reference (IDOR)
 Description
@@ -253,6 +254,7 @@ Implement server-side access checks
 Use indirect identifiers
 
 Enforce RBAC for sensitive endpoints
+---
 
 # 📝 6. Conclusion
 This task provided hands-on experience with real-world web vulnerabilities using OWASP Juice Shop.
@@ -277,6 +279,7 @@ Strong authentication mechanisms
 Proper session handling
 
 Server-side authorization
+---
 
 OWASP Juice Shop serves as an excellent platform for learning web penetration testing in a controlled, ethical, and realistic environment.
 
@@ -294,5 +297,5 @@ Burp Suite Documentation
 👨‍💻 Author
 Ankit Kumar
 Cybersecurity Intern – Future Intern
-🔗 LinkedIn: https://www.linkedin.com/in/ankit-ak47
+🔗 LinkedIn: https://www.linkedin.com/in/ankit-ak47 <br>
 📰 Medium: https://medium.com/@ankitkumarbhambhoo
