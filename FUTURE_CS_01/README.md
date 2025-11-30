@@ -101,6 +101,7 @@ Download, open, and start testing.
 
 Once running, the application looks like a normal web store—
 but behind the scenes it contains numerous exploitable vulnerabilities.
+---
 
 # 🧨 SQL Injection (SQLi)
 SQL Injection occurs when user input is not validated and is directly inserted into SQL queries.
@@ -157,8 +158,9 @@ Fully compromise server
 ✔ Apply least privilege DB permissions
 ✔ Deploy WAF (ModSecurity, Cloudflare WAF)
 ✔ Perform regular security tests (Burp, SQLMap, ZAP)
+---
 
-🧨 Cross-Site Scripting (XSS)
+# 🧨 Cross-Site Scripting (XSS)
 XSS allows an attacker to inject malicious JavaScript into a webpage.
 This can lead to:
 
@@ -201,8 +203,9 @@ Executes purely on client-side.
 ✔ HttpOnly cookies
 ✔ Avoid dangerous JS functions (innerHTML, eval)
 ✔ Use framework security features (Angular/React auto-escape)
+---
 
-🔐 Weak JWT Verification
+# 🔐 Weak JWT Verification
 Modifying Tokens to Gain Admin Access
 Juice Shop uses JWT tokens for authentication.
 A major flaw: it accepts tampered or unsigned JWTs.
@@ -252,8 +255,9 @@ Completely bypass authentication
 ✔ Set token expiration
 ✔ Avoid storing roles in JWT
 ✔ Perform authorization checks on server, NOT client
+---
 
-🔓 Insecure Direct Object Reference (IDOR)
+# 🔓 Insecure Direct Object Reference (IDOR)
 IDOR happens when apps expose internal identifiers (like user IDs) without authorization checks.
 
 Juice Shop contains classic IDOR flaws.
@@ -296,8 +300,9 @@ Escalate privileges
 ✔ Use indirect identifiers
 ✔ Implement RBAC
 ✔ Validate ownership of resources
+---
 
-🎯 Final Summary
+# 🎯 Final Summary
 This task involved performing hands-on penetration testing on OWASP Juice Shop and exploring:
 
 SQL Injection
