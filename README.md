@@ -26,3 +26,73 @@ This repository contains all the tasks, documentation, analyses, and learnings c
 
 Each task is organized in its own folder with proper documentation, scripts, screenshots, and resources.
 
+FUTURE_CS_01/
+│
+├── Task1
+│ ├── README.md
+│ ├── notes.md
+│ ├── findings.txt
+│
+├── Task2
+│ ├── README.md
+│
+├── Task3
+│ ├── README.md
+│
+└── README.md
+
+
+---
+
+## 📌 Repository Naming Convention (Required)
+
+As per the internship guidelines, every task repository must follow this naming format:
+
+
+---
+
+## ✅ Tasks Completed
+
+| Task No. | Title                         | Status     |
+|----------|-------------------------------|------------|
+| Task 01  | Cybersecurity Domain Task     | ⏳ Ongoing |
+| Task 02  | Cybersecurity Domain Task     | ⏳ Ongoing |
+| Task 03  | Cybersecurity Domain Task     | ⏳ Pending |
+
+---
+
+## 🎯 Goals
+
+- Gain hands-on experience with cybersecurity tools  
+- Strengthen understanding of domain-specific concepts  
+- Learn through practical self-driven tasks  
+- Build a portfolio of cybersecurity work  
+- Improve technical reporting and documentation skills  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Nmap**
+- **Burp Suite**
+- **OWASP Juice Shop**
+- **Wireshark**
+- **TryHackMe**
+- **Kali Linux**
+- **Python**
+- **Git & GitHub**
+
+---
+
+## 👨‍💻 Author
+
+**Ankit Kumar**  
+Cybersecurity Enthusiast | Future Intern  
+🔗 [LinkedIn](https://www.linkedin.com/in/ankit-ak47)  
+📰 [Medium](https://medium.com/@ankitkumarbhambhoo)
+
+---
+
+> 📘 *This repository is maintained as part of my Cybersecurity Internship under Future Intern and is intended for educational purposes only.*
+
+
