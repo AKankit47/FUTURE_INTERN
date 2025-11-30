@@ -294,8 +294,8 @@ TryHackMe: Juice Shop Room
 
 Burp Suite Documentation
 
-👨‍💻 Author
-Ankit Kumar
-Cybersecurity Intern – Future Intern
+👨‍💻 Author <br>
+Ankit Kumar <br>
+Cybersecurity Intern – Future Intern <br>
 🔗 LinkedIn: https://www.linkedin.com/in/ankit-ak47 <br>
 📰 Medium: https://medium.com/@ankitkumarbhambhoo
