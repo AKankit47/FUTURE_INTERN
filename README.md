@@ -1,135 +1,101 @@
-Task Repository
+🚀 Future Intern – Cybersecurity Internship Tasks
 
-Welcome to my Future Intern Cyber Security Track Repository.
-This repository contains all the tasks assigned to me during the internship, along with detailed explanations, methodologies, tools, proof-of-concepts (PoCs), screenshots, and final reports.
+Welcome to the official repository for my Cybersecurity Internship at Future Intern.
+This repository contains all tasks, documentation, and analyses completed during the internship as per the provided guidelines.
 
-This repository serves as a structured and professional record of my work and learning journey.
+🧑‍💻 About the Internship
 
-📂 Repository Naming Convention
+Company: Future Intern
 
-This repository follows the standard naming format required by Future Intern:
+Type: Self-paced Internship
 
-FUTURE_CS_01
+Start Date: Begins only after the official start date mentioned in the Offer Letter
 
+Domain: Cybersecurity
 
-Where:
+Structure & Requirements:
 
-FUTURE → Future Intern Program
+Complete tasks only within the assigned domain
 
-CS → Cyber Security Track
+Completion Certificate: Minimum 2 tasks required
 
-01 → Task Number
+Letter of Recommendation (LoR): Minimum 3 tasks required
 
-Each new task will be added inside this repository in separate folders.
+Choose your own learning resources (self-directed; no formal training)
 
-🎯 About the Internship
+No fixed timings — complete tasks at your convenience
 
-The Future Intern Program offers hands-on experience in cybersecurity by assigning real-world security tasks designed to develop technical expertise in:
+📁 Repository Naming Convention (As per Guidelines)
 
-Web Application Penetration Testing
+Your repository must follow this pattern:
 
-OWASP Top 10 Vulnerabilities
+FUTURE_TrackCode_TaskNumber
 
-Network Security
+Example
 
-Vulnerability Assessment
+If you are pursuing Cyber Security and completing Task 2, your repo should be named:
 
-API Security
+FUTURE_CS_02
 
-Security Misconfigurations
+📁 Repository Structure (This Repository)
 
-Secure Authentication & Authorization
+Each task is documented carefully with proper files, screenshots, and explanations.
 
-Basic Security Automation
+📦 FUTURE_CS_01/
+ ┣ 📂 Task1
+ ┃ ┣ 📄 README.md
+ ┃ ┣ 📄 findings.txt
+ ┃ ┣ 📄 notes.md
+ ┣ 📂 Task2
+ ┃ ┗ 📄 README.md
+ ┣ 📂 Task3
+ ┣ 📄 README.md
 
-This repository documents my progress across all assigned tasks.
+✅ Tasks Completed
+Task No.	Task Type	Status
+Task 01	Cybersecurity Domain Task	⏳ Ongoing
+Task 02	Cybersecurity Domain Task	⏳ Ongoing
+Task 03	Cybersecurity Domain Task	⏳ Pending
 
-📝 Repository Structure
-FUTURE_CS_01/
-│
-├── Task-01/
-│   ├── README.md
-│   ├── report.pdf / report.docx
-│   ├── screenshots/
-│   ├── payloads.txt
-│   └── source_code/
-│
-├── Task-02/
-│   └── (Will be added when assigned)
-│
-└── Task-03/ … etc.
+(Tasks will be updated as progress continues.)
 
+🎯 Goals of This Internship
 
-Each task will include a full explanation, screenshots, tools used, and final report files.
+Strengthen understanding of cybersecurity fundamentals
 
-✔️ Completed Tasks
-📁 Task 01 — Web Application Security Testing using OWASP Juice Shop
+Perform hands-on testing using tools and methodologies
 
-Status: ✔ Completed
+Document vulnerabilities, exploits, and mitigations
 
-This task included hands-on testing of vulnerabilities such as:
+Build a professional cybersecurity portfolio
 
-SQL Injection
+Gain real-world analysis and reporting experience
 
-Reflected, Stored & DOM-Based XSS
+🛡️ Tools & Technologies
 
-IDOR (Insecure Direct Object Reference)
-
-Broken Authentication
-
-Weak JWT Verification
-
-Security Misconfigurations
-
-API Testing using Burp Suite
-
-Manual & automated vulnerability detection
-
-Documentation for Task 01 is available inside:
-
-Task-01/
-
-🚀 Tools & Technologies Used
-
-Burp Suite
-
-OWASP ZAP
-
-SQLMap
-
-Docker
+Kali Linux
 
 Nmap
 
+Burp Suite
+
+OWASP Juice Shop
+
 Wireshark
 
-Postman
-
-Kali Linux Tools
-
-TryHackMe / HackTheBox Labs
+Python
 
 Git & GitHub
 
-📚 Learning Goals
+🧠 Author
 
-Through this internship, my goals are to:
+Ankit Kumar
+Cybersecurity Enthusiast | Future Intern
+🔗 LinkedIn
 
-Master core web vulnerabilities
+📰 Medium
 
-Perform manual penetration testing
-
-Understand secure coding & defenses
-
-Generate professional security reports
-
-Strengthen practical cybersecurity skills
-
-Improve vulnerability analysis & documentation
-
-Work with real-world testing tools and methodologies
-
-🧑‍💻 About Me
+📘 This repository is maintained as part of my Cybersecurity Internship under Future Intern and is strictly for educational purposes only.
 
 I am Ankit Kumar, a cybersecurity student and practitioner passionate about ethical hacking, Linux, CTFs, and building secure systems.
 This repository reflects my dedication to continuous learning in cybersecurity.
